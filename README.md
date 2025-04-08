@@ -1,7 +1,7 @@
 ## Minimal Reproduction for [rscarson/rustyscript#360](https://github.com/rscarson/rustyscript/issues/360)
 
 ## TLDR.
-- I've prebuilt the dist under `prebuild`. Switch between presets by adjusting `L8: #[folder = "..."]` in `backend/src/rusty.rs` to tryout.
+- I've prebuild the frontend dist under `prebuild`. Switch between presets by adjusting [`L8`](https://github.com/TheOrdinaryWow/unknown-arm-still/blob/main/backend/src/rusty.rs#L8) and [`L25`](https://github.com/TheOrdinaryWow/unknown-arm-still/blob/main/backend/src/rusty.rs#L25) in [`backend/src/rusty.rs`](https://github.com/TheOrdinaryWow/unknown-arm-still/blob/main/backend/src/rusty.rs) to tryout.
 
 ## Host Info
 - OS: macOS 15.3.2
@@ -16,11 +16,9 @@
 - Install Node.js via [Node.js](https://nodejs.org/en/download/)
 
 ### Instructions
-- Navigate to `frontend` directory,
+- Navigate to `frontend` directory
+- mod [`server.preset`](https://github.com/TheOrdinaryWow/unknown-arm-still/blob/main/frontend/app.config.ts#L19) in [`frontend/app.config.ts`](https://github.com/TheOrdinaryWow/unknown-arm-still/blob/main/frontend/app.config.ts) to switch between presets
 - use `bun run build` to build dist
-- Navigate to `backend` directory,
+- Navigate to `backend` directory
+- might need to adjust [`L8`](https://github.com/TheOrdinaryWow/unknown-arm-still/blob/main/backend/src/rusty.rs#L8) and [`L25`](https://github.com/TheOrdinaryWow/unknown-arm-still/blob/main/backend/src/rusty.rs#L25) in [`backend/src/rusty.rs`](https://github.com/TheOrdinaryWow/unknown-arm-still/blob/main/backend/src/rusty.rs)
 - use `cargo run` to run server
-
-### Info
-- mod `server.preset` in `frontend/app.config.ts` to switch between presets.
-- might need to adjust `L8: #[folder = "..."]` in `backend/src/rusty.rs`.
