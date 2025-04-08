@@ -1,0 +1,18 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rust-embed = { version = "8.6.0", features = ["debug-embed"] }
+rustyscript = { version = "0.11", features = [
+  "web",
+  "io",
+  "node_experimental",
+] }
+vfs = { version = "0.12", features = ["async-trait", "embedded-fs"] }
+libffi-sys = { version = "*", features = ["system"] }
+
+# https://github.com/rscarson/rustyscript/issues/332
+[patch.crates-io]
+deno_media_type = { git = 'https://github.com/denoland/deno_media_type', tag = "0.2.6" }

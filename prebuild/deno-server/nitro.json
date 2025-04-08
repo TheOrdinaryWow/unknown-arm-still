@@ -1,0 +1,15 @@
+{
+  "date": "2025-04-08T02:03:04.775Z",
+  "preset": "deno-server-legacy",
+  "framework": {
+    "name": "nitro",
+    "version": ""
+  },
+  "versions": {
+    "nitro": "2.11.8"
+  },
+  "commands": {
+    "preview": "deno task --config ./deno.json start"
+  },
+  "config": {}
+}

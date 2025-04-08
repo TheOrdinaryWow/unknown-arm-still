@@ -1,0 +1,1 @@
+import{r as t,j as n}from"./client-B1kSv_mk.js";function r(){return fetch("/api/demo-names").then(e=>e.json())}const m=function(){const[s,o]=t.useState([]);return t.useEffect(()=>{r().then(o)},[]),n.jsx("div",{className:"p-4",children:n.jsx("div",{children:s.join(", ")})})};export{m as component};
